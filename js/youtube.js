@@ -11,8 +11,8 @@ maxResults : 5,
 */
 
 const vidList = document.querySelector(".vidList"); 
-const key = 'AIzaSyD62N3ObfAdS9fO3LIOtg5NYyfqE7sWmq4'; 
-const playlistId = 'PLYOPkdUKSFgWPLsAWpqRpK0cCiAGdxi-Y';
+const key = 'AIzaSyDA9JxUWxiJRm6GSCEutLr1CIiU5qxmxOQ'; 
+const playlistId = 'PLq0n89wH9v3AseAyXB3QEj65PaGGTWa6Q';
 const num = 5; 
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 
