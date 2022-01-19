@@ -56,7 +56,7 @@
                 border-bottom:1px solid #bbb; 
                 padding:20px 30px; 
 
-                input[type=text],input[type=password]{
+                input[type=text],input[type=password], select{
                     width:30%; height:30px; 
                     border:1px solid #bbb; 
                     background:#eeffff; 
@@ -69,12 +69,7 @@
                 label{
                     margin-right:30px; 
                 }
-                select#company{
-                    width:20%; height:30px; 
-                    border:1px solid #bbb; 
-                    background:#eeffff; 
-                    padding-left:20px; 
-                }
+                 
 
                 textarea#comments{
                     width:80%; height:100px; 
@@ -89,6 +84,11 @@
                     color:hotpink; 
                     margin-top:10px; 
                     display:none; 
+                }
+                p{
+                    font:12px/1 'arial'; 
+                    color:hotpink; 
+                    margin-top:10px;                    
                 }
             }
         }
@@ -114,13 +114,11 @@
     
                 td{
                    
-                    input[type=text],input[type=password]{
+                    input[type=text],input[type=password],select{
                         width:50%;  
                     }
      
-                    select#company{
-                        width:30%;  
-                    }
+                    
     
                     textarea#comments{
                         width:90%;                          
@@ -149,7 +147,7 @@
                 }
     
                 td{                   
-                    input[type=text],input[type=password]{
+                    input[type=text],input[type=password], select{
                         width:100%;  
                     }
                     
@@ -157,9 +155,7 @@
                         display:block;
                         margin-right:0px; 
                     }
-                    select#company{
-                        width:100%;  margin-top:10px; 
-                    }
+                   
     
                     textarea#comments{
                         width:100%;                          

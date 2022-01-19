@@ -13,3 +13,38 @@ btnCall.onclick = function(e){
     //menuMo에 on이 있으면 제거, 없으면 추가 
     menuMo.classList.toggle("on"); 
 }
+//gnb
+const gnb = document.querySelector("#gnb"); 
+const gnb_lis = gnb.children; 
+// console.log(gnb_lis); 
+
+for(let li of gnb_lis){
+
+    li.addEventListener("mouseenter", e=>{
+        const sub = e.currentTarget.querySelector(".sub"); 
+        sub.style.display = "block"; 
+
+        const depth1 = e.currentTarget.children[0]; 
+        depth1.classList.add("on"); 
+    }); 
+
+    li.addEventListener("mouseleave", e=>{
+        const sub = e.currentTarget.querySelector(".sub"); 
+        sub.style.display = "none"; 
+
+        const depth1 = e.currentTarget.children[0]; 
+        depth1.classList.remove("on"); 
+    });
+
+    li.addEventListener("focusin", e=>{
+        const sub = e.currentTarget.querySelector(".sub"); 
+        sub.style.display = "block"; 
+    }); 
+
+    const sub = li.querySelector(".sub li"); 
+    const lastEl = sub.lastElementChild; 
+
+    lastEl.addEventListener("focusout", e=>{
+        e.currentTarget.closest(".sub").style.display = "none"; 
+    })
+}
