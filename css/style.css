@@ -336,17 +336,13 @@ table {
   background: url(../img/brand3.jpg) no-repeat center/cover; }
 .community .inner table {
   width: 100%;
-  border-bottom: 2px solid #111;
+  border-top: 1px solid #111;
   border-collapse: collapse;
   margin-bottom: 50px; }
-  .community .inner table tr:nth-of-type(even) {
-    background: #eee; }
-  .community .inner table tr:hover {
-    background: lightcyan; }
   .community .inner table tr th {
     padding: 15px;
-    background: #444;
-    color: #fff; }
+    background: #eee;
+    color: #000; }
     .community .inner table tr th:nth-of-type(1) {
       width: 10%; }
     .community .inner table tr th:nth-of-type(3) {
@@ -372,24 +368,6 @@ table {
     content: '';
     display: block;
     clear: both; }
-  .community .inner .pagination .prev {
-    float: left;
-    display: block;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    color: #eee;
-    text-align: center;
-    background: #555; }
-  .community .inner .pagination .next {
-    float: right;
-    display: block;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    color: #eee;
-    text-align: center;
-    background: #555; }
   .community .inner .pagination .numbers {
     display: inline-block;
     text-align: center;
@@ -404,8 +382,8 @@ table {
       margin: 0 5px;
       transition: 0.5s; }
       .community .inner .pagination .numbers a:hover {
-        background: #666;
-        color: #fff; }
+        border: 2px solid #167a68;
+        color: #000; }
 
 /*tablet -------------------------------------  */
 @media screen and (max-width: 1179px) {
@@ -1282,8 +1260,7 @@ figure.pop {
         font-size: 18px;
         line-height: 27px; }
       #visual .inner .button {
-        bottom: 70px;
-        left: 0px; }
+        bottom: 70px; }
         #visual .inner .button .btn {
           margin-right: 5px;
           padding: 15px;
