@@ -793,7 +793,7 @@ figure.pop {
   width: 100%;
   border-bottom: 1px solid #ddd; }
   #header .inner {
-    width: 1180px;
+    width: 1200px;
     height: 120px;
     margin: 0 auto;
     position: relative; }
@@ -917,7 +917,7 @@ figure.pop {
   #visual .inner {
     z-index: 2;
     position: relative;
-    width: 1180px;
+    width: 1200px;
     height: 600px;
     margin: 0 auto; }
     #visual .inner .imgbox1 {
@@ -971,7 +971,7 @@ figure.pop {
 #campaign .inner {
   z-index: 1;
   position: relative;
-  width: 1180px;
+  width: 1200px;
   padding: 50px 0;
   margin: 0 auto; }
   #campaign .inner h2 {
@@ -980,10 +980,11 @@ figure.pop {
     font: bold 40px/1 'arial';
     color: #666; }
   #campaign .inner .txt_left {
+    width: 100%;
     position: absolute;
-    top: 450px;
+    top: 420px;
     text-align: left;
-    left: 50px; }
+    padding-right: 900px; }
     #campaign .inner .txt_left h3 {
       text-align: right;
       margin-bottom: 10px;
@@ -1003,9 +1004,10 @@ figure.pop {
     width: 500px;
     height: 500px; }
   #campaign .inner .txt_right {
+    width: 100%;
     position: absolute;
-    top: 450px;
-    right: 5px;
+    top: 420px;
+    padding-left: 900px;
     text-align: right; }
     #campaign .inner .txt_right h3 {
       text-align: left;
@@ -1034,7 +1036,7 @@ figure.pop {
   background: #f1743a; }
   #benner .inner {
     position: relative;
-    width: 1180px;
+    width: 1200px;
     height: 300px;
     margin: 0 auto;
     color: #fff;
@@ -1069,57 +1071,74 @@ figure.pop {
 
 /*nav*/
 #nav {
-  width: 100%; }
-  #nav .inner {
+  /* 현재 선택된 불릿 배경 흰색으로 구분 표시 */ }
+  #nav h2 {
+    color: #666;
+    font-size: 30px;
+    text-align: center;
+    padding: 60px; }
+  #nav .slider {
+    width: 720px;
+    height: 510px;
     position: relative;
-    width: 1180px;
-    height: 600px;
     margin: 0 auto;
-    top: 100px; }
-    #nav .inner h2 {
-      text-align: center;
-      font-size: 35px;
-      color: #666; }
-    #nav .inner .flex {
-      position: absolute;
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      text-align: center;
-      padding: 60px 100px; }
-      #nav .inner .flex .menubox {
-        padding: 0px; }
-        #nav .inner .flex .menubox .imgbox05 {
-          width: 300px;
-          height: 300px;
-          border-radius: 5%; }
-        #nav .inner .flex .menubox h4 {
-          font-size: 20px;
-          color: #167a68;
-          margin-top: 20px; }
-      #nav .inner .flex .menubox2 {
-        padding: 0 10px 0 10px; }
-        #nav .inner .flex .menubox2 .imgbox06 {
-          width: 300px;
-          height: 300px;
-          border-radius: 5%; }
-        #nav .inner .flex .menubox2 h4 {
-          font-size: 20px;
-          color: #167a68;
-          margin-top: 20px; }
-      #nav .inner .flex .menubox3 .imgbox07 {
-        width: 300px;
-        height: 300px;
-        border-radius: 5%; }
-      #nav .inner .flex .menubox3 h4 {
-        font-size: 20px;
-        color: #167a68;
-        margin-top: 20px; }
+    overflow: hidden;
+    /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */ }
+  #nav .slider input[type=radio] {
+    display: none; }
+  #nav ul.imgs {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  #nav ul.imgs li {
+    position: absolute;
+    left: 800px;
+    transition-delay: 0.5s;
+    /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
+    padding: 0;
+    margin: 0; }
+  #nav .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 2; }
+  #nav .bullets label {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 20px;
+    height: 20px;
+    cursor: pointer; }
+  #nav .slider input[type=radio]:nth-child(1):checked ~ .bullets > label:nth-child(1) {
+    background-color: #fff; }
+  #nav .slider input[type=radio]:nth-child(2):checked ~ .bullets > label:nth-child(2) {
+    background-color: #fff; }
+  #nav .slider input[type=radio]:nth-child(3):checked ~ .bullets > label:nth-child(3) {
+    background-color: #fff; }
+  #nav .slider input[type=radio]:nth-child(4):checked ~ .bullets > label:nth-child(4) {
+    background-color: #fff; }
+  #nav .slider input[type=radio]:nth-child(1):checked ~ ul.imgs > li:nth-child(1) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1; }
+  #nav .slider input[type=radio]:nth-child(2):checked ~ ul.imgs > li:nth-child(2) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1; }
+  #nav .slider input[type=radio]:nth-child(3):checked ~ ul.imgs > li:nth-child(3) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1; }
+  #nav .slider input[type=radio]:nth-child(4):checked ~ ul.imgs > li:nth-child(4) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1; }
 
 /*about*/
 #about .inner {
   position: relative;
-  width: 1180px;
+  width: 1200px;
   height: 600px;
   margin: 0 auto; }
   #about .inner h2 {
@@ -1178,7 +1197,7 @@ figure.pop {
   padding: 100px 0;
   background: #167a68; }
   #footer .inner {
-    width: 1180px;
+    width: 1200px;
     margin: 0 auto; }
     #footer .inner::after {
       content: "";
@@ -1277,12 +1296,14 @@ figure.pop {
   /*campaign -----------------------------------------------*/
   #campaign .inner {
     width: 360px;
-    height: 870px; }
+    height: 880px; }
     #campaign .inner h2 {
       padding: 10px;
       font-size: 30px; }
     #campaign .inner .txt_left {
-      top: 400px; }
+      width: 100%;
+      padding: 0 30px;
+      top: 430px; }
       #campaign .inner .txt_left h3 {
         font-size: 20px;
         line-height: 30px; }
@@ -1290,7 +1311,9 @@ figure.pop {
         font-size: 15px;
         line-height: 20px; }
     #campaign .inner .txt_right {
-      top: 130px; }
+      width: 100%;
+      top: 130px;
+      padding: 0 30px; }
       #campaign .inner .txt_right h3 {
         font-size: 20px; }
       #campaign .inner .txt_right p {
@@ -1312,37 +1335,30 @@ figure.pop {
         line-height: 20px; }
 
   /*benner -----------------------------------------*/
-  #benner .inner {
+  #benner {
     display: none; }
 
   /* nav ---------------------------------------------- */
-  #nav .inner {
+  #nav {
     width: 360px;
-    height: 1150px;
-    top: 50px; }
-    #nav .inner h2 {
-      padding-bottom: 15px;
+    height: 450px;
+    padding-top: 35px; }
+    #nav h2 {
+      padding: 0px;
       font-size: 30px; }
-    #nav .inner .flex {
-      padding: 20px;
-      display: block; }
-      #nav .inner .flex .menubox h4 {
-        margin-top: 10px;
-        margin-bottom: 20px; }
-      #nav .inner .flex .menubox2 h4 {
-        margin-top: 10px;
-        margin-bottom: 20px; }
-      #nav .inner .flex .menubox3 .imgbox07 h4 {
-        margin-top: 10px;
-        margin-bottom: 20px; }
+    #nav .slider {
+      top: 30px;
+      position: relative;
+      width: 340px;
+      height: 300px; }
 
   /* about ---------------------------------------------- */
   #about .inner {
     width: 360px;
-    height: 850px;
-    top: 50px; }
+    height: 850px; }
     #about .inner h2 {
-      padding-bottom: 15px;
+      padding-top: 50px;
+      padding-bottom: 20px;
       font-size: 30px; }
     #about .inner .flex2 {
       padding: 20px;
