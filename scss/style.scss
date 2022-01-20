@@ -691,8 +691,8 @@ $mobile: 539px;
 			width: 360px;
 			height: 320px;
 			display: block;
-			padding: 20px 20px 10px 20px;
 			text-align: justify;
+			left: 30px;
 
 			h1 {
 				padding-top: 70px;
@@ -700,14 +700,15 @@ $mobile: 539px;
 				font-size: 22px;
 			}
 			p{
-				margin-top: 11px;
+				margin-top: 20px;
 				font-size: 18px;
-				line-height: 23px;
+				line-height: 27px;
 			}
 			.button {
 				bottom: 70px;
+				left: 0px;
 				.btn{
-					margin-right: 4px;
+					margin-right: 5px;
 					padding: 15px;
 					font-size: 13px;
 					line-height: 13px;
