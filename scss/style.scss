@@ -784,7 +784,8 @@ $mobile: 539px;
 	#nav {
 		width: 360px;
 		height: 450px;
-		padding-top: 35px;
+		padding-top: 55px;
+		margin: 0 auto;
 		h2{
 			padding: 0px;
 			font-size: 30px;
@@ -792,7 +793,8 @@ $mobile: 539px;
 		.slider{
 			top: 30px;
 			position: relative;
-			width: 340px;
+			
+			width: 350px;
 			height: 300px;
 		}
 	}
