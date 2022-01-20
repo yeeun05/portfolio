@@ -785,6 +785,10 @@ figure.pop {
     color: #fff;
     cursor: pointer; }
 
+.wrap {
+  width: 100%; }
+
+/*header*/
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd; }
@@ -967,7 +971,7 @@ figure.pop {
 #campaign .inner {
   z-index: 1;
   position: relative;
-  width: 1290px;
+  width: 1180px;
   padding: 50px 0;
   margin: 0 auto; }
   #campaign .inner h2 {
@@ -1030,7 +1034,7 @@ figure.pop {
   background: #f1743a; }
   #benner .inner {
     position: relative;
-    width: 1200px;
+    width: 1180px;
     height: 300px;
     margin: 0 auto;
     color: #fff;
@@ -1068,7 +1072,7 @@ figure.pop {
   width: 100%; }
   #nav .inner {
     position: relative;
-    width: 1200px;
+    width: 1180px;
     height: 600px;
     margin: 0 auto;
     top: 100px; }
@@ -1115,7 +1119,7 @@ figure.pop {
 /*about*/
 #about .inner {
   position: relative;
-  width: 1200px;
+  width: 1180px;
   height: 600px;
   margin: 0 auto; }
   #about .inner h2 {
@@ -1288,23 +1292,25 @@ figure.pop {
     background-color: beige;
     height: 100vmax; }
     #visual .imgbox1 {
-      width: 90%;
-      padding: 30px; }
+      display: none; }
     #visual .inner {
       display: block;
       padding: 20px 20px 10px 20px;
       text-align: justify; }
       #visual .inner h1 {
         margin-top: 6px;
-        font-size: 40px; }
+        font-size: 35px; }
       #visual .inner p {
         margin-top: 11px;
-        font-size: 14px; }
+        font-size: 25px; }
       #visual .inner .button .btn {
-        width: 75px;
-        height: 30px;
         margin-right: 4px;
-        padding: 7px;
+        padding: 20px;
+        font-size: 13px;
+        line-height: 13px; }
+      #visual .inner .button .btn2 {
+        margin-right: 4px;
+        padding: 20px;
         font-size: 13px;
         line-height: 13px; }
 
