@@ -197,17 +197,17 @@ $mobile: 539px;
 	.inner {
 		z-index: 2;
 		position: relative;
-		width: 1180%x;
+		width: 1180px;
 		height: 600px;
 		margin: 0 auto;
 
 		.imgbox1 {
 			position: absolute;
 			top: 90px;
-			right: 0;
+			right: 0px;
 			height: 600px;
 			object-fit: cover;
-			margin-right: 250px;
+			// margin: 0px;
 		}
 		
 		h1 {
@@ -215,7 +215,7 @@ $mobile: 539px;
 			font-size: 50px;
 			color: #000;
 			margin-bottom: 10px;
-			padding-left: 414px;
+			left: 0px;
 		}
 		span {
 			font-weight: bold;
@@ -224,12 +224,13 @@ $mobile: 539px;
 		p {
 			font-size: 25px;
 			color: #000;
-			padding-left: 420px;
+			left: 0px;
 			line-height: 37px
+			
 		}
 		.button {
 			position: absolute;
-			padding-left: 420px;
+			left: 0px;
 			bottom: 150px;
 		
 			.btn {
@@ -268,7 +269,7 @@ $mobile: 539px;
 .inner {
 	z-index: 1;
 	position: relative;
-	width: 100%;
+	width: 1290px;
 	padding: 50px 0;
 	margin: 0 auto;
 
@@ -282,7 +283,7 @@ $mobile: 539px;
 			position: absolute;
 			top: 450px;
 			text-align: left;
-			padding-left: 368px;
+			left: 50px;
 
 			h3 {
 				text-align: right;
@@ -311,7 +312,7 @@ $mobile: 539px;
 		.txt_right {
 			position: absolute;
 			top: 450px;
-			padding-left: 1249px;
+			right: 5px;
 			text-align: right;
 
 			h3 {
@@ -346,39 +347,41 @@ $mobile: 539px;
 
 /*benner*/
 #benner{
-	
+	width: 100%;
+	background: #f1743a;
 	.inner {
 		position: relative;
-		width: 100%;
+		width: 1200px;
 		height: 300px;
 		margin: 0 auto;
 		color: #fff;
 		background: #f1743a;
-		
+		padding: 0px;
+
 		h3 {
 			position: absolute;
 			font-size: 35px;
 			padding-top:  60px;
-			margin-left: 915px;
+			left: 410px;
 			color: 666;
 		}
 		p {
 			position: absolute;
 			font-size: 20px;
 			padding-top:  110px;
-			margin-left: 918px;
+			left: 410px;
 		}
 		.imgbox4 {
-			float: left;
+			position: absolute;
 			width: 300px;
 			height: 300px;
 			object-fit: cover;
-			margin-left: 550px;
+			margin-left: 71px;
 		}
 		.button{
 			display: inline-flex;
 			margin-top: 180px;
-			margin-left: 70px;
+			margin-left: 410px;
 			padding: 20px 50px;
 			background: #fff;
 			color: #000;
@@ -390,64 +393,57 @@ $mobile: 539px;
 
 /*nav*/
 #nav {
-	position: relative;
-	width: 1200px;
-	height: 600px;
-	margin: 0 auto;
+	width: 100%;
 	.inner{
+		position: relative;
+		width: 1200px;
+		height: 600px;
+		margin: 0 auto;
+		top: 100px;
+		
 		h2 {
-			margin: auto;
 			text-align: center;
-			padding: 100px;
 			font-size: 35px;	
 			color: #666;
+			
 		}
 		.flex{
 			position: absolute;
-			top: 28px;
 			display: flex;
 			flex-direction: row;
 			align-content: center;
 			text-align: center;
-			padding: 0 130px;
+			padding: 60px 100px;
 
 			.menubox {
-				width: 100%;
-				text-align: center;
-				margin-top: 200px;
+				padding: 0px;
 				.imgbox05 {
 					width: 300px;
 					height: 300px;
 					border-radius: 5%;	
 				}
 				h4 {
-					display: inline-flex;
 					font-size:20px;
 					color: #167a68;
 					margin-top: 20px;
 
 				}
 			}
-			.menubox2 {
-				width: 100%;
-				text-align: center;
-				margin-top: 200px;
-			
+			.menubox2 {		
+				padding: 0 10px 0 10px;	
 				.imgbox06 {
 					width: 300px;
 					height: 300px;
 					border-radius: 5%;
 				}
 				h4 {
-					font-size:20px;
+					font-size: 20px;
 					color: #167a68;
 					margin-top: 20px;
 				}
 			}
 			.menubox3 {
-				width: 100%;
-				margin-top: 200px;
-			
+				
 				.imgbox07 {
 					width: 300px;
 					height: 300px;
@@ -465,14 +461,13 @@ $mobile: 539px;
 
 /*about*/
 #about {
-	position: relative;
-	width: 1200px;
-	height: 600px;
-	margin: 0 auto;
 	.inner{
+		position: relative;
+		width: 1200px;
+		height: 600px;
+		margin: 0 auto;
 		h2{
-			padding-top: 100px;
-			padding-bottom: 80px;
+			padding: 100px 0px;
 			font-size: 35px;
 			text-align: center;
 			font-size: 35px;
@@ -613,27 +608,29 @@ $mobile: 539px;
 
 	/*visual -------------------------------------- */
 	#visual {
-		height: calc(100vh - 101px);
-		background: url(../img/visual1.jpg) no-repeat center/cover;
-
-		video {
-			display: none;
+		height: calc(100vh - 120px);
+		background-color: beige;
+		.imgbox1 {
+		
 		}
 		.inner {
 			width: 100%;
 			padding: 0 30px;
 			h1 {
-				font: normal 14vmin/1 "arial";
+				font: normal 50vmin/1 "arial";
 			}
 
-			a {
-				width: 100%;
+			p{
+				font: normal 25vmin/1 "arial";
 			}
+			// a {
+			// 	width: 100%;
+			// }
 		}
 	}
 
 	/*news -----------------------------------------------*/
-	#news {
+	#campaign {
 		padding: 100px 30px;
 
 		.inner {
@@ -716,11 +713,39 @@ $mobile: 539px;
 @media screen and (max-width: $mobile) {
 	/*visual -------------------------------------- */
 	#visual {
-		background: url(../img/visual2.jpg) no-repeat center/cover;
-
+		background-color: beige;
+		height: 100vmax;
+		
+		.imgbox1{
+			width: 90%;
+			padding: 30px;
+		}
 		.inner {
+			display: block;
+			padding: 20px 20px 10px 20px;
+			text-align: justify;
+
 			h1 {
-				font: normal 12vmin/1 "arial";
+				margin-top: 6px;
+				font-size: 40px;
+				// font: normal 5vmin/1 "arial";
+			}
+			p{
+				margin-top: 11px;
+				font-size: 14px;
+				// font: normal 3vmin/1 "arial";
+			}
+			.button {
+
+				.btn{
+					width: 75px;
+					height: 30px;
+					margin-right: 4px;
+					padding: 7px;
+					font-size: 13px;
+					line-height: 13px;
+					}
+				.btn2{}
 			}
 		}
 	}
