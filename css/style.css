@@ -1226,54 +1226,9 @@ figure.pop {
       display: block; }
 
   /*visual -------------------------------------- */
-  #visual {
-    height: calc(100vh - 120px);
-    background-color: beige; }
-    #visual .inner {
-      width: 100%;
-      padding: 0 30px; }
-      #visual .inner h1 {
-        font: normal 50vmin/1 "arial"; }
-      #visual .inner p {
-        font: normal 25vmin/1 "arial"; }
-
   /*news -----------------------------------------------*/
-  #campaign {
-    padding: 100px 30px; }
-    #campaign .inner {
-      width: 100%; }
-      #campaign .inner .wrap article {
-        width: 49%;
-        margin-right: 2%;
-        margin-bottom: 60px; }
-        #campaign .inner .wrap article:nth-of-type(2n) {
-          margin-right: 0px; }
-        #campaign .inner .wrap article .pic {
-          height: 20vmax; }
-
   /*brand -----------------------------------------*/
-  #brand {
-    padding: 100px 30px; }
-    #brand .inner {
-      width: 100%; }
-      #brand .inner .wrap article:nth-of-type(1) {
-        width: 49%;
-        margin-right: 2%; }
-      #brand .inner .wrap article:nth-of-type(2) {
-        width: 49%;
-        margin-right: 0px;
-        margin-bottom: 20px; }
-      #brand .inner .wrap article:nth-of-type(3) {
-        width: 49%; }
-      #brand .inner .wrap article:nth-of-type(4) {
-        width: 100%; }
-
   /* banner ---------------------------------------------- */
-  #banner {
-    padding: 150px 30px; }
-    #banner .inner {
-      width: 100%; }
-
   /* comment -------------------------------------*/
   #comments {
     padding: 100px 30px; }
@@ -1290,54 +1245,110 @@ figure.pop {
   /*visual -------------------------------------- */
   #visual {
     background-color: beige;
-    height: 100vmax; }
+    height: 350px; }
     #visual .imgbox1 {
       display: none; }
     #visual .inner {
+      width: 360px;
+      height: 320px;
       display: block;
       padding: 20px 20px 10px 20px;
       text-align: justify; }
       #visual .inner h1 {
-        margin-top: 6px;
-        font-size: 35px; }
+        padding-top: 70px;
+        margin-top: 3px;
+        font-size: 22px; }
       #visual .inner p {
         margin-top: 11px;
-        font-size: 25px; }
-      #visual .inner .button .btn {
-        margin-right: 4px;
-        padding: 20px;
-        font-size: 13px;
-        line-height: 13px; }
-      #visual .inner .button .btn2 {
-        margin-right: 4px;
-        padding: 20px;
-        font-size: 13px;
-        line-height: 13px; }
+        font-size: 18px;
+        line-height: 23px; }
+      #visual .inner .button {
+        bottom: 70px; }
+        #visual .inner .button .btn {
+          margin-right: 4px;
+          padding: 15px;
+          font-size: 13px;
+          line-height: 13px; }
+        #visual .inner .button .btn2 {
+          padding: 15px;
+          font-size: 13px;
+          line-height: 13px; }
 
-  /*news -----------------------------------------------*/
-  #news .inner .wrap article {
-    width: 100%;
-    margin-right: 0%; }
-    #news .inner .wrap article .pic {
-      height: 30vmax; }
+  /*campaign -----------------------------------------------*/
+  #campaign .inner {
+    width: 360px;
+    height: 870px; }
+    #campaign .inner h2 {
+      padding: 10px;
+      font-size: 30px; }
+    #campaign .inner .txt_left {
+      top: 400px; }
+      #campaign .inner .txt_left h3 {
+        font-size: 20px;
+        line-height: 30px; }
+      #campaign .inner .txt_left p {
+        font-size: 15px;
+        line-height: 20px; }
+    #campaign .inner .txt_right {
+      top: 130px; }
+      #campaign .inner .txt_right h3 {
+        font-size: 20px; }
+      #campaign .inner .txt_right p {
+        font-size: 15px;
+        line-height: 20px; }
+    #campaign .inner img {
+      display: none; }
+    #campaign .inner .txtcenter {
+      padding-top: 620px;
+      margin: 15px; }
+      #campaign .inner .txtcenter h3 {
+        margin: 0 auto;
+        width: 250px;
+        font-size: 20px;
+        margin-bottom: 10px; }
+      #campaign .inner .txtcenter p {
+        width: 300px;
+        font-size: 15px;
+        line-height: 20px; }
 
-  /*brand -----------------------------------------*/
-  #brand .inner .wrap article:nth-of-type(1) {
-    width: 100%;
-    height: 400px;
-    padding: 50px;
-    margin-right: 0%;
-    margin-bottom: 20px; }
-  #brand .inner .wrap article:nth-of-type(2) {
-    width: 100%; }
-  #brand .inner .wrap article:nth-of-type(3) {
-    width: 100%; }
-  #brand .inner .wrap article:nth-of-type(4) {
-    width: 100%; }
+  /*benner -----------------------------------------*/
+  #benner .inner {
+    display: none; }
 
-  /* banner ---------------------------------------------- */
-  #banner {
-    padding: 120px 30px; }
+  /* nav ---------------------------------------------- */
+  #nav .inner {
+    width: 360px;
+    height: 1150px;
+    top: 50px; }
+    #nav .inner h2 {
+      padding-bottom: 15px;
+      font-size: 30px; }
+    #nav .inner .flex {
+      padding: 20px;
+      display: block; }
+      #nav .inner .flex .menubox h4 {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+      #nav .inner .flex .menubox2 h4 {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+      #nav .inner .flex .menubox3 .imgbox07 h4 {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+
+  /* about ---------------------------------------------- */
+  #about .inner {
+    width: 360px;
+    height: 850px;
+    top: 50px; }
+    #about .inner h2 {
+      padding-bottom: 15px;
+      font-size: 30px; }
+    #about .inner .flex2 {
+      padding: 20px;
+      display: block; }
+      #about .inner .flex2 .icon {
+        margin-bottom: 30px; }
 
   /* comment -------------------------------------*/
   #comments .inner ul li a {

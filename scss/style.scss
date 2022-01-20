@@ -608,88 +608,36 @@ $mobile: 539px;
 	}
 
 	/*visual -------------------------------------- */
-	#visual {
-		height: calc(100vh - 120px);
-		background-color: beige;
-		.imgbox1 {
+	// #visual {
+	// 	height: calc(100vh - 120px);
+	// 	background-color: beige;
+	// 	.imgbox1 {
 		
-		}
-		.inner {
-			width: 100%;
-			padding: 0 30px;
-			h1 {
-				font: normal 50vmin/1 "arial";
-			}
+	// 	}
+	// 	.inner {
+	// 		width: 100%;
+	// 		padding: 0 30px;
+	// 		h1 {
+	// 			font: normal 50vmin/1 "arial";
+	// 		}
 
-			p{
-				font: normal 25vmin/1 "arial";
-			}
-			// a {
-			// 	width: 100%;
-			// }
-		}
-	}
+	// 		p{
+	// 			font: normal 25vmin/1 "arial";
+	// 		}
+	// 		// a {
+	// 		// 	width: 100%;
+	// 		// }
+	// 	}
+	// }
 
 	/*news -----------------------------------------------*/
-	#campaign {
-		padding: 100px 30px;
 
-		.inner {
-			width: 100%;
-			.wrap {
-				article {
-					width: 49%;
-					margin-right: 2%;
-					margin-bottom: 60px;
-
-					&:nth-of-type(2n) {
-						margin-right: 0px;
-					}
-					.pic {
-						height: 20vmax;
-					}
-				}
-			}
-		}
-	}
 
 	/*brand -----------------------------------------*/
-	#brand {
-		padding: 100px 30px;
 
-		.inner {
-			width: 100%;
-
-			.wrap {
-				article {
-					&:nth-of-type(1) {
-						width: 49%;
-						margin-right: 2%;
-					}
-					&:nth-of-type(2) {
-						width: 49%;
-						margin-right: 0px;
-						margin-bottom: 20px;
-					}
-					&:nth-of-type(3) {
-						width: 49%;
-					}
-					&:nth-of-type(4) {
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
 
 	/* banner ---------------------------------------------- */
-	#banner {
-		padding: 150px 30px;
 
-		.inner {
-			width: 100%;
-		}
-	}
 
 	/* comment -------------------------------------*/
 	#comments {
@@ -715,90 +663,178 @@ $mobile: 539px;
 	/*visual -------------------------------------- */
 	#visual {
 		background-color: beige;
-		height: 100vmax;
+		height: 350px;
 		
 		.imgbox1{
 			display: none;
 		}
 		.inner {
+			width: 360px;
+			height: 320px;
 			display: block;
 			padding: 20px 20px 10px 20px;
 			text-align: justify;
 
 			h1 {
-				margin-top: 6px;
-				font-size: 35px;
+				padding-top: 70px;
+				margin-top: 3px;
+				font-size: 22px;
 			}
 			p{
 				margin-top: 11px;
-				font-size: 25px;
-
+				font-size: 18px;
+				line-height: 23px;
 			}
 			.button {
-
+				bottom: 70px;
 				.btn{
 					margin-right: 4px;
-					padding: 20px;
+					padding: 15px;
 					font-size: 13px;
 					line-height: 13px;
 					}
 				.btn2{
-					margin-right: 4px;
-					padding: 20px;
+					padding: 15px;
 					font-size: 13px;
 					line-height: 13px;
 				}
 			}
 		}
 	}
-
-	/*news -----------------------------------------------*/
-	#news {
+	/*campaign -----------------------------------------------*/
+	#campaign {
 		.inner {
-			.wrap {
-				article {
-					width: 100%;
-					margin-right: 0%;
-
-					.pic {
-						height: 30vmax;
+			width: 360px;
+			height: 870px;
+			h2 {
+				padding: 10px;
+				font-size: 30px;
+			}
+				.txt_left {
+					
+					// padding: 0px;
+					top: 400px;
+					h3 {
+						font-size: 20px;
+						line-height: 30px;
 					}
+					p{
+						font-size: 15px;
+						line-height: 20px;
+					}
+				}
+				.txt_right{
+					top: 130px;
+					h3{
+						font-size: 20px;
+					}
+					p{
+						font-size: 15px;
+						line-height: 20px;
+					}
+				}
+			
+			img{
+				display: none;
+			}
+			.txtcenter{
+				padding-top : 620px;
+				margin: 15px;
+				h3{
+					margin: 0 auto;
+					width: 250px;
+					font-size: 20px;
+					margin-bottom: 10px;
+				}
+				p{
+					width: 300px;
+					font-size: 15px;
+					line-height: 20px;
 				}
 			}
 		}
 	}
-
-	/*brand -----------------------------------------*/
-	#brand {
+	/*benner -----------------------------------------*/
+	#benner {
 		.inner {
-			.wrap {
-				article {
-					&:nth-of-type(1) {
-						width: 100%;
-						height: 400px;
-						padding: 50px;
-						margin-right: 0%;
+			display: none;
+		}
+	}
+	/* nav ---------------------------------------------- */
+	#nav {
+		.inner {
+			width: 360px;
+			height: 1150px;
+			top: 50px;
+			// margin: 0 auto;
+			
+			h2{
+				padding-bottom: 15px;
+				font-size: 30px;
+			}
+			.flex{	
+				padding: 20px;
+				display: block;
+				.menubox {
+					.imgbox05 {
+						
+					}
+					h4 {
+						margin-top: 10px;
 						margin-bottom: 20px;
 					}
-					&:nth-of-type(2) {
-						width: 100%;
+				}
+				.menubox2{
+					.imgbox06{
+
 					}
-					&:nth-of-type(3) {
-						width: 100%;
+					h4 {
+						margin-top: 10px;
+						margin-bottom: 20px;
 					}
-					&:nth-of-type(4) {
-						width: 100%;
+				}
+				.menubox3{
+					
+					.imgbox07{
+						h4 {
+							margin-top: 10px;
+							margin-bottom: 20px;
+						}
+					}
+				}
+		}
+		
+	}
+}
+	/* about ---------------------------------------------- */
+	#about {
+		.inner{
+			width: 360px;
+			height: 850px;
+			top: 50px;
+			h2{
+				padding-bottom: 15px;
+				font-size: 30px;
+			}
+			.flex2{
+				padding: 20px;
+				display: block;
+				.icon {
+					margin-bottom: 30px;
+					.imgbox08{
+						
+					}
+				}
+
+				.icon2 {
+					
+					.imgbox09{
+						
 					}
 				}
 			}
 		}
 	}
-
-	/* banner ---------------------------------------------- */
-	#banner {
-		padding: 120px 30px;
-	}
-
 	/* comment -------------------------------------*/
 	#comments {
 		.inner {
@@ -807,7 +843,6 @@ $mobile: 539px;
 			}
 		}
 	}
-
 	/*footer -------------------------------------------*/
 	#footer {
 		.inner {
